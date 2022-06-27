@@ -1,0 +1,14 @@
+CATEGORIAS
+**************************************
+crear categoria-listo
+ver   categoria--listo
+editar categorias--listo
+eliminar categoria---listo
+
+TASAS DE CAMBIO
+****************************************
+modificar tasa---listo
+
+IMPUESTO
+***************************************
+modificar impuesto
