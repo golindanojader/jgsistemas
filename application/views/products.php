@@ -54,18 +54,68 @@ $this->load->view('templates/head');
 
                   <?php 
                   
-                  foreach ($products as $key => $row) {
+                  foreach ($products as $row => $item) {
+
+                    $row = $row + 1;
 
                     echo'
                     <tr>
-                    <td>'.$row["code_1"].'</td>
-                    <td>'.$row["description"].'</td>
-                    <td>'.$row["sale_price"].'</td>
-                    <td>'.$row["actual_stock"].'</td>
-                    <td>'.$row["reserved_stock"].'</td>
-                    <td>'.$row["category"].'</td>
-                    <td><button class="btn btn-info btn-sm"><i class="fa fa-edit"></i></button></td>
-                    </tr>';
+                    <td>'.$item["code_1"].'</td>
+                    <td>'.$item["description"].'</td>
+                    <td>'.$item["sale_price"].'</td>
+                    <td>'.$item["actual_stock"].'</td>
+                    <td>'.$item["reserved_stock"].'</td>
+                    <td>'.$item["category"].'</td>
+                    <td><a href="#edit'.$row.'" data-toggle="modal"><button class="btn btni-info btn-sm"><i class="fa fa-edit"></i></button></a>
+                    
+                    
+                    
+                    
+                  
+                    <div class="modal fade" id="edit'.$row.'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+
+
+                              
+                         
+
+                            
+                              <div class="form-group col-6"> 
+                              <label for="">Código 1</label>
+                              <input   type="text" class="form-control  form-control-sm"  id="codigo_1"  name="New_code_1"  placeholder="#########" required>
+                              </div>
+              
+                              <div class="form-group col-6"> 
+                              <label for="">Código 2</label>
+                              <input   type="text" class="form-control  form-control-sm"  id="codigo_2"  name="New_code_2"  placeholder="#########" >
+                            
+                            
+
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    </td>
+                    </tr>
+                    
+                    
+                    
+                    ';
                   
                   }
                   ?>
@@ -81,6 +131,8 @@ $this->load->view('templates/head');
             </div>
             </section>
             </div>
+
+
 
 
 

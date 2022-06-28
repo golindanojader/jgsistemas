@@ -247,7 +247,7 @@ $this->load->view('templates/footer');
                       <div class="form-group">
 
                       <label for="" class="col-form-label">Categoría:</label>
-                      <input class="form form-control form-control-sm" type="text"   id="CategoryId"    name="CategoryId"     placeholder="" >
+                      <input class="form form-control form-control-sm" type="hidden"   id="CategoryId"    name="CategoryId"     placeholder="" >
                       <input class="form form-control form-control-sm" type="text"   id="categorieName" name="categorieName"  placeholder="" required> 
                      
 
