@@ -72,7 +72,7 @@ $this->load->view('templates/head');
                     
                     
                   
-                    <div class="modal fade" id="edit'.$row.'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="edit'.$row.'" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
@@ -81,21 +81,22 @@ $this->load->view('templates/head');
                               <span aria-hidden="true">&times;</span>
                             </button>
                           </div>
-                          <div class="modal-body">
 
+                          <div class="modal-body bg-danger">
 
-                              
-                         
+                            <form>
 
-                            
-                              <div class="form-group col-6"> 
-                              <label for="">Código 1</label>
-                              <input   type="text" class="form-control  form-control-sm"  id="codigo_1"  name="New_code_1"  placeholder="#########" required>
+                              <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                <input type="text" class="form form-control" id="recipient-name">
                               </div>
-              
-                              <div class="form-group col-6"> 
-                              <label for="">Código 2</label>
-                              <input   type="text" class="form-control  form-control-sm"  id="codigo_2"  name="New_code_2"  placeholder="#########" >
+
+                              <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form form-control" style="width:500%" id="message-text"></textarea>
+                              </div>
+
+                            </form>
                             
                             
 
@@ -122,7 +123,7 @@ $this->load->view('templates/head');
        
                  
             
-                  </tfoot>
+                </tbody>
                 </table>
               </div>
               <!-- /.card-body -->
