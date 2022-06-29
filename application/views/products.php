@@ -86,8 +86,7 @@ $this->load->view('templates/head');
 
                          
 
-                 
-
+                
                           <div class="form-row">
                                 <div class="form-group">
                                 <label for="recipient-name" class="col-form-label">Código 1:</label>
