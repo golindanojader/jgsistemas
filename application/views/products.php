@@ -95,7 +95,7 @@ $this->load->view('templates/head');
 
                               <div class="form-group">
                               <label for="recipient-name" class="col-form-label">Código 2:</label>
-                              <input type="text" class="form form-control form-control-sm" style="width:100%"  id="">
+                              <input type="text" class="form form-control form-control-sm" style="width:100%"  value="'.$item["code_2"].'" id="">
                             </div>
                           </div>
 
@@ -108,28 +108,69 @@ $this->load->view('templates/head');
           
                         <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Categoría:</label>
-                        <input type="text" class="form form-control form-control-sm" style="width:250%"  id="">
+                        <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["category"].'" id="">
                       </div>
 
                       <div class="form-group ">
                       <label for="recipient-name" class="col-form-label">Marca:</label>
-                      <input type="text" class="form form-control form-control-sm" style="width:250%"  id="">
+                      <input type="text" class="form form-control form-control-sm" style="width:250%"  value="'.$item["brand"].'" id="">
                     </div>
                
 
-                  <div class="form-row">
                         <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Precio Compra:</label>
-                        <input type="text" class="form form-control form-control-sm" style="width:250%"  id="">
+                        <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["cost_price"].'" id="">
                       </div>
 
-                      <div class="form-group ml-3">
+                      <div class="form-group">
                       <label for="recipient-name" class="col-form-label">Precio Venta:</label>
-                      <input type="text" class="form form-control form-control-sm" style="width:250%"  id="">
+                      <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["sale_price"].'" id="">
                     </div>
+                    
+                    
+                    <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Unidad de medida:</label>
+                    <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["measure"].'" id="">
                   </div>
+       
+
+                  
+                  <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Peso:</label>
+                  <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["weight"].'" id="">
+                </div>
+
+                <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Stock actual:</label>
+                <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["actual_stock"].'" id="">
+              </div>
+
+              <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Stock de reserva:</label>
+              <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["reserved_stock"].'" id="">
+            </div>
+ 
+
+            <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Fecha de vencimiento:</label>
+            <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["reserved_stock"].'" id="">
+          </div>
+
+          <div class="form-group">
+          <label for="recipient-name" class="col-form-label">Proveedor:</label>
+          <input type="text" class="form form-control form-control-sm" style="width:250%" value="" id="">
+        </div>
+
+        <div class="form-group">
+        <label for="recipient-name" class="">Observación:</label>
+      
+        <textarea  class="form form-control form-control-sm" name="new_observation" id="" cols="30" rows="2">'.$item["observation"].'</textarea>
+      </div>
+   
+     
 
 
+                    
 
 
  
