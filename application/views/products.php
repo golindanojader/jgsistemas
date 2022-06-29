@@ -73,7 +73,7 @@ $this->load->view('templates/head');
                     
                   
                     <div class="modal fade" id="edit'.$row.'" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-dialog modal-md" role="document">
                         <div class="modal-content">
                           <div class="modal-header">
                             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
@@ -82,20 +82,58 @@ $this->load->view('templates/head');
                             </button>
                           </div>
 
-                          <div class="modal-body bg-danger">
+                          <div class="modal-body">
 
-                            <form>
+                         
 
-                              <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                <input type="text" class="form form-control" id="recipient-name">
+                 
+
+                          <div class="form-row">
+                                <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Código 1:</label>
+                                <input type="text" class="form form-control form-control-sm" style="width:100%" value='.$item["code_1"].' id="">
                               </div>
 
                               <div class="form-group">
-                                <label for="message-text" class="col-form-label">Message:</label>
-                                <textarea class="form form-control" style="width:500%" id="message-text"></textarea>
-                              </div>
+                              <label for="recipient-name" class="col-form-label">Código 2:</label>
+                              <input type="text" class="form form-control form-control-sm" style="width:100%"  id="">
+                            </div>
+                          </div>
 
+                          <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Descripción:</label>
+                          <input type="text" class="form form-control form-control-sm" style="width:500%"  value="'.$item["description"].'" id="">
+                        </div>
+
+          
+          
+                        <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Categoría:</label>
+                        <input type="text" class="form form-control form-control-sm" style="width:250%"  id="">
+                      </div>
+
+                      <div class="form-group ">
+                      <label for="recipient-name" class="col-form-label">Marca:</label>
+                      <input type="text" class="form form-control form-control-sm" style="width:250%"  id="">
+                    </div>
+               
+
+                  <div class="form-row">
+                        <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Precio Compra:</label>
+                        <input type="text" class="form form-control form-control-sm" style="width:250%"  id="">
+                      </div>
+
+                      <div class="form-group ml-3">
+                      <label for="recipient-name" class="col-form-label">Precio Venta:</label>
+                      <input type="text" class="form form-control form-control-sm" style="width:250%"  id="">
+                    </div>
+                  </div>
+
+
+
+
+ 
                             </form>
                             
                             
