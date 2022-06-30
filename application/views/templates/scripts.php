@@ -32,9 +32,7 @@
 <script src="<?= BASE_URL()?>public/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="<?= BASE_URL()?>public/dist/js/pages/dashboard.js"></script>
-
 <script src="<?= BASE_URL()?>public/dist/js/pages/inventory.js"></script>
-
 <script src="<?= BASE_URL()?>public/dist/js/pages/rate.js"></script>
 <script src="<?= BASE_URL()?>public/dist/js/pages/taxe.js"></script>
 

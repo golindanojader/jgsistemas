@@ -159,9 +159,6 @@ $(document).ready(function () {
                 alert("Este Código ya se encuentra registrado")
             }
 
-            
-
-           
 
         
         }
@@ -169,6 +166,19 @@ $(document).ready(function () {
         })
 
        
+    })
+
+
+    // Edit product
+    // **********************************************
+    // **********************************************
+    // **********************************************
+
+    $('.editProduct').click(function(){
+
+        alert( $('.code_1').attr('attrCode_1') )
+
+
     })
 
     

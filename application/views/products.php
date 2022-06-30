@@ -69,123 +69,110 @@ $this->load->view('templates/head');
                     <td><a href="#edit'.$row.'" data-toggle="modal"><button class="btn btni-info btn-sm"><i class="fa fa-edit"></i></button></a>
                     
                     
-                    
-                    
-                  
-                    <div class="modal fade" id="edit'.$row.'" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog modal-md" role="document">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                            </button>
-                          </div>
+                        
+                          <div class="modal fade" id="edit'.$row.'" tabindex="-2" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
 
-                          <div class="modal-body">
+                                <div class="modal-body">
 
-                         
+                                <div class="form-row">
+                                      <div class="form-group">
+                                      <label for="recipient-name" class="col-form-label">Código 1:</label>
+                                      <input type="text" class="form form-control form-control-sm code_1"   style="width:100%" attrCode_1='.$item["code_1"].' value='.$item["code_1"].' id="">
+                                    </div>
 
-                
-                          <div class="form-row">
+                                    <div class="form-group ml-2">
+                                    <label for="recipient-name" class="col-form-label">Código 2:</label>
+                                    <input type="text" class="form form-control form-control-sm" style="width:100%"  value="'.$item["code_2"].'" id="">
+                                  </div>
+                                </div>
+
                                 <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Código 1:</label>
-                                <input type="text" class="form form-control form-control-sm" style="width:100%" value='.$item["code_1"].' id="">
+                                <label for="recipient-name" class="col-form-label">Descripción:</label>
+                                <input type="text" class="form form-control form-control-sm" style="width:500%"  value="'.$item["description"].'" id="">
                               </div>
 
+                
+                
                               <div class="form-group">
-                              <label for="recipient-name" class="col-form-label">Código 2:</label>
-                              <input type="text" class="form form-control form-control-sm" style="width:100%"  value="'.$item["code_2"].'" id="">
+                              <label for="recipient-name" class="col-form-label">Categoría:</label>
+                              <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["category"].'" id="">
                             </div>
+
+                            <div class="form-group ">
+                            <label for="recipient-name" class="col-form-label">Marca:</label>
+                            <input type="text" class="form form-control form-control-sm" style="width:250%"  value="'.$item["brand"].'" id="">
                           </div>
+                    
+                          <div class="form-row">
+                              <div class="form-group">
+                              <label for="recipient-name" class="col-form-label">Precio Compra:</label>
+                              <input type="text" class="form form-control form-control-sm" style="width:100%" value="'.$item["cost_price"].'" id="">
+                            </div>
 
-                          <div class="form-group">
-                          <label for="recipient-name" class="col-form-label">Descripción:</label>
-                          <input type="text" class="form form-control form-control-sm" style="width:500%"  value="'.$item["description"].'" id="">
+                            <div class="form-group ml-2">
+                            <label for="recipient-name" class="col-form-label">Precio Venta:</label>
+                            <input type="text" class="form form-control form-control-sm" style="width:100%" value="'.$item["sale_price"].'" id="">
+                          </div>
                         </div>
+                          
+                          
+                          <div class="form-group">
+                          <label for="recipient-name" class="col-form-label">Unidad de medida:</label>
+                          <input type="text" class="form form-control form-control-sm" style="width:100%" value="'.$item["measure"].'" id="">
+                        </div>
+            
 
-          
-          
+                        
                         <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Categoría:</label>
-                        <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["category"].'" id="">
+                        <label for="recipient-name" class="col-form-label">Peso:</label>
+                        <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["weight"].'" id="">
                       </div>
 
+
+                  <div class="form-row ">
                       <div class="form-group ">
-                      <label for="recipient-name" class="col-form-label">Marca:</label>
-                      <input type="text" class="form form-control form-control-sm" style="width:250%"  value="'.$item["brand"].'" id="">
-                    </div>
-               
-
-                        <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Precio Compra:</label>
-                        <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["cost_price"].'" id="">
+                      <label for="recipient-name" class="col-form-label">Stock actual:</label>
+                      <input type="text" class="form form-control form-control-sm" style="width:100%" value="'.$item["actual_stock"].'" id="">
                       </div>
-
-                      <div class="form-group">
-                      <label for="recipient-name" class="col-form-label">Precio Venta:</label>
-                      <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["sale_price"].'" id="">
-                    </div>
-                    
-                    
-                    <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Unidad de medida:</label>
-                    <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["measure"].'" id="">
-                  </div>
-       
-
                   
+
+                    <div class="form-group ml-2">
+                    <label for="recipient-name" class="col-form-label">Stock de reserva:</label>
+                    <input type="text" class="form form-control form-control-sm" style="width:100%" value="'.$item["reserved_stock"].'" id="">
+                    </div>
+                  </div>
+
                   <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">Peso:</label>
-                  <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["weight"].'" id="">
+                  <label for="recipient-name" class="col-form-label">Fecha de vencimiento:</label>
+                  <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["expiration"].'" id="">
                 </div>
 
                 <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Stock actual:</label>
-                <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["actual_stock"].'" id="">
+                <label for="recipient-name" class="col-form-label">Proveedor:</label>
+                <input type="text" class="form form-control form-control-sm" style="width:250%" value="" id="">
               </div>
-
-              <div class="form-group">
-              <label for="recipient-name" class="col-form-label">Stock de reserva:</label>
-              <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["reserved_stock"].'" id="">
-            </div>
- 
-
+                          <br>
             <div class="form-group">
-            <label for="recipient-name" class="col-form-label">Fecha de vencimiento:</label>
-            <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["reserved_stock"].'" id="">
-          </div>
-
-          <div class="form-group">
-          <label for="recipient-name" class="col-form-label">Proveedor:</label>
-          <input type="text" class="form form-control form-control-sm" style="width:250%" value="" id="">
-        </div>
-
-        <div class="form-group">
-        <label for="recipient-name" class="">Observación:</label>
-      
-        <textarea  class="form form-control form-control-sm" name="new_observation" id="" cols="30" rows="2">'.$item["observation"].'</textarea>
-      </div>
-   
-     
-
-
-                    
-
-
- 
-                            </form>
-                            
-                            
+              <textarea  class="form form-control form-control-sm" name="new_observation" id="" cols="60" rows="2">'.$item["observation"].'</textarea>
+            </div>
+        
 
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary editProduct">Guardar Cambios</button>
                           </div>
                         </div>
                       </div>
                     </div>
+                    </form>
 
 
 
