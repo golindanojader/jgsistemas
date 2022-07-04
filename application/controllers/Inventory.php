@@ -158,6 +158,21 @@ class Inventory extends CI_Controller {
 
          $dataFromModel = $this->Inventory_Model->modifyProduct();  
 
+		// $dataController = array(		
+		// "1"=>$this->input->post('code_2'),
+		// "2"=>$this->input->post('description'),
+		// "3"=>$this->input->post('category_id'),
+		// "4"=>$this->input->post('brand'),
+		// "5"=>$this->input->post('cost_price'),
+		// "6"=>$this->input->post('sale_price'),
+		// "7"=>$this->input->post('measure'),
+		// "8"=>$this->input->post('weight'),
+		// "9"=>$this->input->post('expiration'),
+		// "10"=>$this->input->post('observation'),
+		// "11"=>$this->input->post('actual_stock'),
+		// "12"=>$this->input->post('code_1'));
+
+
         echo json_encode( $dataFromModel);
 
 

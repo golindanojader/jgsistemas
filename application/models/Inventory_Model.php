@@ -210,7 +210,7 @@ class Inventory_Model extends CI_Model{
     public function modifyProduct(){
 
 
-        // $this->db->set('code_1',         $this->input->post('code_1'));
+        $this->db->set('code_1',         $this->input->post('code_1'));
         $this->db->set('code_2',         $this->input->post('code_2'));
         $this->db->set('description',    $this->input->post('description'));
         $this->db->set('category_id',    $this->input->post('category_id'));
@@ -223,8 +223,8 @@ class Inventory_Model extends CI_Model{
         $this->db->set('observation',    $this->input->post('observation'));
         $this->db->set('actual_stock',   $this->input->post('actual_stock'));
         $this->db->set('reserved_stock', $this->input->post('reserved_stock'));
-        $this->db->where('id',           $this->input->post('code_1'));
-        
+        $this->db->where('code_1',           $this->input->post('code_1'));
+
         $dataModel = $this->db->update('product');
         return $dataModel;
 

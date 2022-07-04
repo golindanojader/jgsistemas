@@ -85,7 +85,7 @@ $this->load->view('templates/head');
                                 <div class="form-row">
                                       <div class="form-group">
                                       <label for="recipient-name" class="col-form-label">Código 1:</label>
-                                      <input type="text" class="form form-control form-control-sm code_1"   style="width:100%" attrCode_1='.$item["code_1"].' value='.$item["code_1"].' id="" name="code_1" disabled>
+                                      <input type="text" class="form form-control form-control-sm code_1"   style="width:100%" value='.$item["code_1"].' id="" name="code_1" >
                                     </div>
 
                                     <div class="form-group ml-2">
@@ -103,7 +103,7 @@ $this->load->view('templates/head');
                 
                               <div class="form-group">
                               <label for="recipient-name" class="col-form-label">Categoría:</label>
-                              <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["category"].'" id="" name=""'.$item["category_id"].'"">
+                              <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["category"].'" id="" name="category_id">
                             </div>
 
                             <div class="form-group ">
