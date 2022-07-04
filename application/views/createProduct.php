@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $this->load->view('templates/head');
 
 ?>
-<input class="url" type="hidden" name="" value="<?=BASE_URL?>">
+
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 

@@ -160,7 +160,7 @@ class Inventory_Model extends CI_Model{
             }else{
 
                         
-                        # code...
+                    # code...
                     $this->db->set('code_1',      $this->input->post('New_code_1'));
                     $this->db->set('code_2',      $this->input->post('New_code_2'));
                     $this->db->set('description', $this->input->post('new_descripcion'));
@@ -189,7 +189,7 @@ class Inventory_Model extends CI_Model{
     public function viewProductList(){
 
 
-        $this->db->select('a.code_1,
+        $this->db->select('a.category_id, a.code_1,
          a.code_2,
           a.description, a.location,a.expiration,a.measure, a.cost_price, a.sale_price, a.brand, a.weight, a.observation, a.actual_stock, a.reserved_stock, b.category');
         
@@ -203,7 +203,35 @@ class Inventory_Model extends CI_Model{
 
 
     }
-    
 
+
+
+
+    public function modifyProduct(){
+
+
+        // $this->db->set('code_1',         $this->input->post('code_1'));
+        $this->db->set('code_2',         $this->input->post('code_2'));
+        $this->db->set('description',    $this->input->post('description'));
+        $this->db->set('category_id',    $this->input->post('category_id'));
+        $this->db->set('brand',          $this->input->post('brand'));
+        $this->db->set('cost_price',     $this->input->post('cost_price'));
+        $this->db->set('sale_price',     $this->input->post('sale_price'));
+        $this->db->set('measure',        $this->input->post('measure'));
+        $this->db->set('weight',         $this->input->post('weight'));
+        $this->db->set('expiration',     $this->input->post('expiration'));
+        $this->db->set('observation',    $this->input->post('observation'));
+        $this->db->set('actual_stock',   $this->input->post('actual_stock'));
+        $this->db->set('reserved_stock', $this->input->post('reserved_stock'));
+        $this->db->where('id',           $this->input->post('code_1'));
+        
+        $dataModel = $this->db->update('product');
+        return $dataModel;
+
+       
+
+
+    }
+    
 
 }

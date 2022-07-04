@@ -174,9 +174,24 @@ $(document).ready(function () {
     // **********************************************
     // **********************************************
 
-    $('.editProduct').click(function(){
+    $('.modifyProduct').submit(function(e){
 
-        alert( $('.code_1').attr('attrCode_1') )
+        e.preventDefault();
+
+        	$.ajax({	
+				type: 'POST',
+				url: url+'Inventory/modifyProduct',
+				data: $(this).serialize(),
+				success: function(resp){
+
+
+                    console.log(resp)
+						//   window.location = "products";
+							}
+
+					});
+
+
 
 
     })
