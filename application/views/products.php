@@ -87,7 +87,7 @@ $this->load->view('templates/head');
                                       <label for="recipient-name" class="col-form-label">Código 1:</label>
                                       <input type="text" class="form form-control form-control-sm code_1"   style="width:100%" value='.$item["code_1"].' id="" name="code_1" >
                                     </div>
-
+  
                                     <div class="form-group ml-2">
                                     <label for="recipient-name" class="col-form-label">Código 2:</label>
                                     <input type="text" class="form form-control form-control-sm" style="width:100%"  value="'.$item["code_2"].'" id="" name="code_2">
