@@ -191,7 +191,7 @@ class Inventory_Model extends CI_Model{
 
         $this->db->select('a.category_id, a.code_1,
          a.code_2,
-          a.description, a.location,a.expiration,a.measure, a.cost_price, a.sale_price, a.brand, a.weight, a.observation, a.actual_stock, a.reserved_stock, b.category');
+          a.description,a.expiration,a.measure, a.cost_price, a.sale_price, a.brand, a.weight, a.observation, a.actual_stock, a.reserved_stock, b.category');
         
        
 

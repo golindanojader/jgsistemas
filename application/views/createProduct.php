@@ -11,7 +11,7 @@ $this->load->view('templates/head');
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
-  <!-- Preloader -->
+<input class="url" type="hidden" name="" value="<?=BASE_URL?>">
 
 
   <!-- Navbar -->

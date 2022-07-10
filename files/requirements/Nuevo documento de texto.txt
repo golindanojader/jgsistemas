@@ -1,3 +1,10 @@
+PRODUCTOS
+**************************************
+crear----listo
+editar
+eliminar
+
+
 CATEGORIAS
 **************************************
 crear categoria-listo
