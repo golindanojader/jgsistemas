@@ -1,5 +1,11 @@
 <!-- jQuery -->
 <script src="<?= BASE_URL()?>public/assets/jquery/jquery.min.js"></script>
+
+<script src="<?= BASE_URL()?>public/assets/datatables/jquery.dataTables.min.js"></script>
+<script src="<?= BASE_URL()?>public/assets/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+<script src="<?= BASE_URL()?>public/assets/datatables-buttons/js/buttons.html5.js"></script>
+<script src="<?= BASE_URL()?>public/assets/datatables-buttons/js/buttons.print.js"></script>
+<script src="<?= BASE_URL()?>public/assets/datatables-buttons/js/buttons.colVis.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="<?= BASE_URL()?>public/assets/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -31,10 +37,12 @@
 <!-- AdminLTE for demo purposes -->
 <script src="<?= BASE_URL()?>public/dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+
 <script src="<?= BASE_URL()?>public/dist/js/pages/dashboard.js"></script>
 <script src="<?= BASE_URL()?>public/dist/js/pages/inventory.js"></script>
 <script src="<?= BASE_URL()?>public/dist/js/pages/rate.js"></script>
 <script src="<?= BASE_URL()?>public/dist/js/pages/taxe.js"></script>
+<script src="<?= BASE_URL()?>public/dist/js/pages/dataTables.js"></script>
 
 </body>
 </html>

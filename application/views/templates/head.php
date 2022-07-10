@@ -17,14 +17,20 @@
   <link rel="stylesheet" href="<?= BASE_URL()?>public/assets/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- JQVMap -->
   <link rel="stylesheet" href="<?= BASE_URL()?>public/assets/jqvmap/jqvmap.min.css">
-  <!-- Theme style -->
-  <link rel="stylesheet" href="<?= BASE_URL()?>public/dist/css/adminlte.min.css">
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="<?= BASE_URL()?>public/assets/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= BASE_URL()?>public/assets/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= BASE_URL()?>public/assets/datatables-buttons/css/buttons.bootstrap4.min.css">
+  
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="<?= BASE_URL()?>public/assets/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="<?= BASE_URL()?>public/assets/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="<?= BASE_URL()?>public/assets/summernote/summernote-bs4.min.css">
-
+  <!-- Theme style -->
+  <link rel="stylesheet" href="<?= BASE_URL()?>public/dist/css/adminlte.min.css">
+  
 
 </head>

@@ -34,12 +34,13 @@ $this->load->view('templates/head');
 
               <!-- /.card-header -->
               <div class="card-body">
+              <a class="btn btn-secondary btn-lg active btn-sm" href="<?=BASE_URL().'createProduct'?>"><i class="fa fa-plus"></i></a> 
              <div class="form-inline mb-2">
-             <a class="btn btn-secondary btn-lg active btn-sm" href="<?=BASE_URL().'createProduct'?>"><i class="fa fa-plus"></i></a> 
+         
                 
- 
+
               
-                <table id="example1" class="table table-bordered table-striped mt-2">
+                <table id="products" class="table table-bordered table-striped mt-4">
                   <thead>
                   <tr>
                     <th>Código</th>
