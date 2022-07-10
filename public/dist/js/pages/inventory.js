@@ -185,15 +185,48 @@ $(document).ready(function () {
 				success: function(resp){
 
 					  window.location = "products";
-                      
+
 							}
 
 					});
 
+    })
 
+
+     // Delete product
+    // **********************************************
+    // **********************************************
+    // **********************************************
+
+    $('.deleteProduct').click(function(){
+
+
+        
+        var deleteProduc = "¿Deseas borrar este producto?"
+            productId = {"id": $(this).attr("productId")}
+
+        if (confirm(deleteProduc) == true) {
+
+
+            $.ajax({	
+				type: 'POST',
+				url: url+'Inventory/deleteProduct',
+				data: productId,
+				success: function(resp){
+
+					  window.location = "products";
+
+							}
+
+					});
+           
+            
+
+        
+        }
 
 
     })
 
-    
+
 })

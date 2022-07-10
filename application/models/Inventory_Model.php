@@ -189,12 +189,9 @@ class Inventory_Model extends CI_Model{
     public function viewProductList(){
 
 
-        $this->db->select('a.category_id, a.code_1,
+        $this->db->select('a.id, a.category_id, a.code_1,
          a.code_2,
           a.description,a.expiration,a.measure, a.cost_price, a.sale_price, a.brand, a.weight, a.observation, a.actual_stock, a.reserved_stock, b.category');
-        
-       
-
         $this->db->from('product a');
         $this->db->join('category b', 'A.category_id = B.id');
         $this->db->where('a.status', 1);
@@ -229,6 +226,20 @@ class Inventory_Model extends CI_Model{
         return $dataModel;
 
        
+    }
+
+
+
+
+
+    public function deleteProduct(){
+
+        $this->db->set('status',  0);
+		$this->db->where('id', $this->input->post('id') );
+		$this->db->update('product');
+
+        return "ok";
+
 
 
     }

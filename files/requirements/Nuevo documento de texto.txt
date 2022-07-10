@@ -2,7 +2,7 @@ PRODUCTOS
 **************************************
 crear----listo
 editar---listo
-eliminar
+eliminar---listo
 
 
 CATEGORIAS

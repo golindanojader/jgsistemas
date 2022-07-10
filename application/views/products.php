@@ -172,6 +172,7 @@ $this->load->view('templates/head');
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                            <input type="button" class="btn btn-danger deleteProduct" productId ="'.$item["id"].'" value ="Borrar producto">
                             <button type="submit" class="btn btn-primary">Guardar Cambios</button>
                             </form>
                           </div>

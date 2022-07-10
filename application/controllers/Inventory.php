@@ -180,5 +180,18 @@ class Inventory extends CI_Controller {
 
 	}
 
+
+	public function deleteProduct(){
+
+
+		if (!$this->input->is_ajax_request()) { redirect(BASE_URL());}
+
+         $dataFromModel = $this->Inventory_Model->deleteProduct();  
+
+
+          echo json_encode( $dataFromModel);
+
+	}
+
 	
 }
