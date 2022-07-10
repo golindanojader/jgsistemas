@@ -99,13 +99,21 @@ $this->load->view('templates/head');
                                 <input type="text" class="form form-control form-control-sm" style="width:500%"  value="'.$item["description"].'" id="" name="description">
                               </div>
 
-                
-                
+
                               <div class="form-group">
                               <label for="recipient-name" class="col-form-label">Categoría:</label>
-                              <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["category"].'" id="" name="category_id">
-                            </div>
+                              <select class="form-control form-control-sm" name="category_id" style="width:100%">
+                                <option value="'.$item["category_id"].'">'.$item["category"].'</option>';
 
+                                foreach ($category as $key => $catItem) {
+
+                                  echo '<option value="'.$catItem["id"].'">'.$catItem["category"].'</option>';
+
+                                }
+
+                        echo '</div>
+                        </select>
+                          
                             <div class="form-group ">
                             <label for="recipient-name" class="col-form-label">Marca:</label>
                             <input type="text" class="form form-control form-control-sm" style="width:250%"  value="'.$item["brand"].'" id="" name="brand">
@@ -123,21 +131,22 @@ $this->load->view('templates/head');
                           </div>
                         </div>
                           
-                          
-                          <div class="form-group">
-                          <label for="recipient-name" class="col-form-label">Unidad de medida:</label>
-                          <input type="text" class="form form-control form-control-sm" style="width:100%" value="'.$item["measure"].'" id="" name="measure">
+             
+                          <div class="form-group mr-5">
+                          <label for="recipient-name" class="col-form-label">Und medida:</label>
+                          <input type="text" class="form form-control form-control-sm" style="width:90%" value="'.$item["measure"].'" id="" name="measure">
                         </div>
             
 
                         
-                        <div class="form-group">
+                        <div class="form-group mr-5">
                         <label for="recipient-name" class="col-form-label">Peso:</label>
-                        <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["weight"].'" id="" name="weight" >
+                        <input type="text" class="form form-control form-control-sm" style="width:100%" value="'.$item["weight"].'" id="" name="weight" >
                       </div>
+                
 
 
-                  <div class="form-row ">
+                  <div class="form-row">
                       <div class="form-group ">
                       <label for="recipient-name" class="col-form-label">Stock actual:</label>
                       <input type="text" class="form form-control form-control-sm" style="width:100%" value="'.$item["actual_stock"].'" id="" name="actual_stock">
@@ -155,13 +164,8 @@ $this->load->view('templates/head');
                   <input type="text" class="form form-control form-control-sm" style="width:250%" value="'.$item["expiration"].'" id="" name="expiration" >
                 </div>
 
-                <div class="form-group">
-                <label for="recipient-name" class="col-form-label">Proveedor:</label>
-                <input type="text" class="form form-control form-control-sm" style="width:250%" value="" id="">
-              </div>
-                          <br>
             <div class="form-group">
-              <textarea  class="form form-control form-control-sm" name="new_observation" id="" cols="60" rows="2" name="observation" >'.$item["observation"].'</textarea>
+              <textarea  class="form form-control form-control-sm mt-2"  id="" cols="60" rows="2" name="observation" >'.$item["observation"].'</textarea>
             </div>
         
 

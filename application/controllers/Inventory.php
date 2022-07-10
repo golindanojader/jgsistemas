@@ -34,8 +34,10 @@ class Inventory extends CI_Controller {
 
 
 	public function products(){
+
 		$productList["products"] = $this->Inventory_Model->viewProductList();
-	
+		$productList["category"] = $this->Inventory_Model->viewCategory();
+
 		$this->load->view('products', $productList);
 	}
 

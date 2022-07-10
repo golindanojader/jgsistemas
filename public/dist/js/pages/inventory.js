@@ -90,7 +90,7 @@ $(document).ready(function () {
         // **********************************
         $(".categorySelected").click(function () {
 
-            CategoryId
+      
             $('#categorieName').val($(this).attr("category"))
             $('#CategoryId').val($(this).attr("idCategory"))
             
@@ -184,9 +184,8 @@ $(document).ready(function () {
 				data: $(this).serialize(),
 				success: function(resp){
 
-
-                    console.log(resp)
-						//   window.location = "products";
+					  window.location = "products";
+                      
 							}
 
 					});

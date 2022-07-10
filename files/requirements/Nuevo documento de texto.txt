@@ -1,7 +1,7 @@
 PRODUCTOS
 **************************************
 crear----listo
-editar
+editar---listo
 eliminar
 
 

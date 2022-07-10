@@ -49,7 +49,7 @@ $this->load->view('templates/head');
             
             
             <!-- modal proveedor -->
-            <button id= "" data-toggle="modal" data-target="#supplier" class="btn btn-secondary btn-lg active btn-sm ml-1" ><i class="fa fa-address-book"></i></button> 
+            <button id= "" data-toggle="modal" data-target="#supplier" class="btn btn-secondary btn-lg active btn-sm ml-1 d-none" ><i class="fa fa-address-book"></i></button> 
             
 
 
