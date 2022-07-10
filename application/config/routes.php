@@ -54,5 +54,6 @@ $route['products']           = 'Inventory/products';
 $route['createProduct']      = 'Inventory/createproduct';
 $route['rate']               = 'Inventory/rate';
 $route['taxe']               = 'Inventory/taxe';
+// $route['quote']              = 'Inventory/quote';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

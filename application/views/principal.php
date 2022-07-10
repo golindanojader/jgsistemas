@@ -11,9 +11,7 @@
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
 
-  <!-- Preloader -->
 
-  <?php $this->load->view('templates/preloader');?>
 
   <!-- Navbar -->
 
