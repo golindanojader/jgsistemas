@@ -30,8 +30,8 @@
         </button>
       </div>
       <div class="modal-body">
-
-      <h5>Contacto: golindano.jader@gmail.com</h5>
+      <h6>Adapto a las necesidas del cliente</h6>
+      <h5>Contacto:    JGSOFTECH111@GMAIL.COM</h5>
     
       </div>
     

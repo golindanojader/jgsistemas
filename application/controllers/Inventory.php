@@ -28,8 +28,9 @@ class Inventory extends CI_Controller {
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
 	public function index()
-	{
-		$this->load->view('principal');
+	{	
+		$productList["products"] = $this->Inventory_Model->viewProductList();
+		$this->load->view('principal', $productList);
 	}
 
 

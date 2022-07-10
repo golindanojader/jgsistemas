@@ -115,10 +115,10 @@ $this->load->view('templates/head');
               
 
 
-                <div class="form-group col-2"> 
+                <!-- <div class="form-group col-2"> 
                 <label for="">Margen</label>
                 <input  type="text" class="form-control form-control-sm margin"    id=""        name="" placeholder="">
-                </div>
+                </div> -->
               
 
                 </div>
@@ -168,11 +168,7 @@ $this->load->view('templates/head');
                 <label for="">Fecha Venc.</label>
                 <input type="date"  class="form-control form-control-sm"   id="fecha_venc"    name="new_expiration" placeholder="">
                 </div>
-                
-                <div class="form-group"> 
-                <label for="">Proveedor</label>
-                <input type="text"  class="form-control form-control-sm"   id="proveedor"    name="proveedor" placeholder="">
-                </div>
+              
 
                 <div class="form-group"> 
                 <label for="">Observaciones</label>
