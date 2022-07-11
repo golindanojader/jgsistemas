@@ -39,28 +39,28 @@ $this->load->view('templates/head');
 
                   <div class="form-group col-2"> 
                   <label for="">IVA:</label>
-                  <input class="form-control form-control-sm bcv" type="text" name="" value="<?=$tax["tax_1"]?>">
+                  <input class="form-control form-control-sm bcv" type="text" name="" value="<?=$tax["tax_1"]?>" disabled>
                   </div>
                       
                   <div class="form-group col-2"> 
                   <label for="">Otro impuesto 2:</label>
-                  <input class=" form-control form-control-sm parallel" type="text" name="" value="<?=$tax["tax_2"]?>">
+                  <input class=" form-control form-control-sm parallel" type="text" name="" value="<?=$tax["tax_2"]?>" disabled> 
                   </div>
 
                   <div class="form-group col-2"> 
                   <label for="">Otro impuesto 3:</label>
-                  <input class="form-control form-control-sm other_1" type="text" name="" value="<?=$tax["tax_3"]?>">
+                  <input class="form-control form-control-sm other_1" type="text" name="" value="<?=$tax["tax_3"]?>" disabled>
                   </div>
 
                   <div class="form-group col-2"> 
                   <label for="">Otro impuesto 4:</label>
-                  <input class="form-control form-control-sm other_2" type="text" name="" value="<?=$tax["tax_4"]?>">
+                  <input class="form-control form-control-sm other_2" type="text" name="" value="<?=$tax["tax_4"]?>" disabled>
                   </div>
 
 
                   <div class="form-group col-2"> 
                   <label for="">Otro impuesto 5:</label>
-                  <input class="form-control form-control-sm other_2" type="text" name="" value="<?=$tax["tax_5"]?>">
+                  <input class="form-control form-control-sm other_2" type="text" name="" value="<?=$tax["tax_5"]?>" disabled>
                   </div>
 
 

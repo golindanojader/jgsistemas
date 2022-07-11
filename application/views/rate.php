@@ -39,28 +39,28 @@ $this->load->view('templates/head');
 
                 <div class="form-group col-2"> 
                 <label for="">BCV:</label>
-                <input class="form-control form-control-sm bcv" type="text" name="" value="<?=$rate["bcv"]?>">
+                <input class="form-control form-control-sm bcv" type="text" name="" value="<?=$rate["bcv"]?>" disabled>
                 </div>
                     
                 <div class="form-group col-2"> 
                 <label for="">Paralelo:</label>
-                <input class=" form-control form-control-sm parallel" type="text" name="" value="<?=$rate["parallel"]?>">
+                <input class=" form-control form-control-sm parallel" type="text" name="" value="<?=$rate["parallel"]?>" disabled>
                 </div>
 
                 <div class="form-group col-2"> 
                 <label for="">Otra tasa 1:</label>
-                <input class="form-control form-control-sm other_1" type="text" name="" value="<?=$rate["other_1"]?>">
+                <input class="form-control form-control-sm other_1" type="text" name="" value="<?=$rate["other_1"]?>" disabled>
                 </div>
 
                 <div class="form-group col-2"> 
                 <label for="">Otra tasa 2:</label>
-                <input class="form-control form-control-sm other_2" type="text" name="" value="<?=$rate["other_2"]?>">
+                <input class="form-control form-control-sm other_2" type="text" name="" value="<?=$rate["other_2"]?>" disabled>
                 </div>
 
 
                 <div class="form-group col-2"> 
                 <label for="">Otra tasa 3:</label>
-                <input class="form-control form-control-sm other_2" type="text" name="" value="<?=$rate["other_3"]?>">
+                <input class="form-control form-control-sm other_2" type="text" name="" value="<?=$rate["other_3"]?>" disabled>
                 </div>
 
 

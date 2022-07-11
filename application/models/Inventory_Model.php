@@ -91,9 +91,6 @@ class Inventory_Model extends CI_Model{
 
 
     public function modifyRate(){
-
-
-
         $this->db->set('bcv',       $this->input->post('bcv'));
         $this->db->set('parallel',  $this->input->post('parallel'));
         $this->db->set('other_1',   $this->input->post('other_1'));
